@@ -15,9 +15,9 @@ final class ViewController: UIViewController {
     // MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        greenView.layer.cornerRadius = 10
         setViews()
         setupConstraints()
-        greenView.layer.cornerRadius = 10
         changeViewColor()
         greenView.delegate = self
     }

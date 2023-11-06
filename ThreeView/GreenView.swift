@@ -21,7 +21,7 @@ final class GreenView: UIView {
     
     // MARK: - Private UI Properties
     private let yellowView = YellowView()
-
+    
     // MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -47,7 +47,6 @@ final class GreenView: UIView {
         backgroundColor = .green
         addSubview(yellowView)
     }
-    
     
     private func setupConstraints() {
         yellowView.translatesAutoresizingMaskIntoConstraints = false

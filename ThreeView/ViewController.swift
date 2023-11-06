@@ -8,30 +8,58 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
+    
     // MARK: - Private UI Properties
-    private let firstView = MainView()
+    private let greenView = GreenView()
     
     // MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setViews()
         setupConstraints()
+        greenView.layer.cornerRadius = 10
+        changeViewColor()
+        greenView.delegate = self
+    }
+    
+    // MARK: - Private methods
+    private func changeViewColor() {
+        greenView.greenViewAction = {
+            self.view.backgroundColor = .red
+        }
     }
     
     private func setViews() {
         view.backgroundColor = .systemGray2
-        view.addSubview(firstView)
+        view.addSubview(greenView)
     }
     
     private func setupConstraints() {
-        firstView.translatesAutoresizingMaskIntoConstraints = false
+        greenView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            firstView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-            firstView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
-            firstView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100),
-            firstView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -100)
+            greenView.leadingAnchor.constraint(
+                equalTo: view.leadingAnchor,
+                constant: 40
+            ),
+            greenView.trailingAnchor.constraint(
+                equalTo: view.trailingAnchor,
+                constant: -40
+            ),
+            greenView.topAnchor.constraint(
+                equalTo: view.safeAreaLayoutGuide.topAnchor,
+                constant: 120
+            ),
+            greenView.bottomAnchor.constraint(
+                equalTo: view.safeAreaLayoutGuide.bottomAnchor,
+                constant: -150
+            )
         ])
     }
 }
 
+// MARK: - GreenViewDelegate
+extension ViewController: GreenViewDelegate {
+    func changeColor() {
+        view.backgroundColor = .orange
+    }
+}

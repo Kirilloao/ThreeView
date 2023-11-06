@@ -12,8 +12,8 @@
 		3C0F32D62AF9430000CB835F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32D52AF9430000CB835F /* ViewController.swift */; };
 		3C0F32DB2AF9430100CB835F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F32DA2AF9430100CB835F /* Assets.xcassets */; };
 		3C0F32DE2AF9430100CB835F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0F32DC2AF9430100CB835F /* LaunchScreen.storyboard */; };
-		3C0F32E62AF9441900CB835F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32E52AF9441900CB835F /* MainView.swift */; };
-		3C0F32E82AF946B100CB835F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32E72AF946B100CB835F /* RootView.swift */; };
+		3C0F32E62AF9441900CB835F /* GreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32E52AF9441900CB835F /* GreenView.swift */; };
+		3C0F32E82AF946B100CB835F /* YellowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F32E72AF946B100CB835F /* YellowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		3C0F32DA2AF9430100CB835F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C0F32DD2AF9430100CB835F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C0F32DF2AF9430100CB835F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C0F32E52AF9441900CB835F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		3C0F32E72AF946B100CB835F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		3C0F32E52AF9441900CB835F /* GreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenView.swift; sourceTree = "<group>"; };
+		3C0F32E72AF946B100CB835F /* YellowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 				3C0F32D12AF9430000CB835F /* AppDelegate.swift */,
 				3C0F32D32AF9430000CB835F /* SceneDelegate.swift */,
 				3C0F32D52AF9430000CB835F /* ViewController.swift */,
-				3C0F32E52AF9441900CB835F /* MainView.swift */,
-				3C0F32E72AF946B100CB835F /* RootView.swift */,
+				3C0F32E52AF9441900CB835F /* GreenView.swift */,
+				3C0F32E72AF946B100CB835F /* YellowView.swift */,
 				3C0F32DA2AF9430100CB835F /* Assets.xcassets */,
 				3C0F32DC2AF9430100CB835F /* LaunchScreen.storyboard */,
 				3C0F32DF2AF9430100CB835F /* Info.plist */,
@@ -141,8 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C0F32D62AF9430000CB835F /* ViewController.swift in Sources */,
-				3C0F32E82AF946B100CB835F /* RootView.swift in Sources */,
-				3C0F32E62AF9441900CB835F /* MainView.swift in Sources */,
+				3C0F32E82AF946B100CB835F /* YellowView.swift in Sources */,
+				3C0F32E62AF9441900CB835F /* GreenView.swift in Sources */,
 				3C0F32D22AF9430000CB835F /* AppDelegate.swift in Sources */,
 				3C0F32D42AF9430000CB835F /* SceneDelegate.swift in Sources */,
 			);

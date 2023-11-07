@@ -17,7 +17,7 @@ final class GreenView: UIView {
     var delegate: GreenViewDelegate?
     
     // MARK: - Closures
-    var greenViewAction: (() -> Void)?
+    var greenViewAction: ((UIColor) -> Void)?
     
     // MARK: - Private UI Properties
     private let yellowView = YellowView()
@@ -38,8 +38,8 @@ final class GreenView: UIView {
     
     // MARK: - Private Methods
     private func buttonDidTapped() {
-        yellowView.buttonAction = {
-            self.greenViewAction?()
+        yellowView.buttonAction = { color in
+            self.greenViewAction?(color)
         }
     }
     

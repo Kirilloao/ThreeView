@@ -24,8 +24,8 @@ final class ViewController: UIViewController {
     
     // MARK: - Private methods
     private func changeViewColor() {
-        greenView.greenViewAction = {
-            self.view.backgroundColor = .red
+        greenView.greenViewAction = { color in
+            self.view.backgroundColor = color
         }
     }
     

@@ -17,7 +17,7 @@ final class YellowView: UIView {
     var delegate: YellowViewDelegate?
     
     // MARK: - Closure
-    var buttonAction: (() -> Void)?
+    var buttonAction: ((UIColor) -> Void)?
     
     // MARK: - Private UI Properties
     private lazy var mainStackView: UIStackView = {
@@ -63,7 +63,7 @@ final class YellowView: UIView {
     
     // MARK: - Private Actions
     @objc private func buttonDidTapped(_ sender: UIButton) {
-        sender == closureButton ? buttonAction?() : delegate?.changeColor(.orange)
+        sender == closureButton ? buttonAction?(.red) : delegate?.changeColor(.orange)
     }
     
     // MARK: - Private Methods

@@ -8,7 +8,7 @@
 import UIKit
 
 protocol GreenViewDelegate {
-    func changeColor()
+    func changeColor(_ color: UIColor)
 }
 
 final class GreenView: UIView {
@@ -73,7 +73,7 @@ final class GreenView: UIView {
 
 // MARK: - YellowViewDelegate
 extension GreenView: YellowViewDelegate {
-    func changeColor() {
-        delegate?.changeColor()
+    func changeColor(_ color: UIColor) {
+        delegate?.changeColor(color)
     }
 }

@@ -8,7 +8,7 @@
 import UIKit
 
 protocol YellowViewDelegate: AnyObject {
-    func changeColor()
+    func changeColor(_ color: UIColor)
 }
 
 final class YellowView: UIView {
@@ -63,7 +63,7 @@ final class YellowView: UIView {
     
     // MARK: - Private Actions
     @objc private func buttonDidTapped(_ sender: UIButton) {
-        sender == closureButton ? buttonAction?() : delegate?.changeColor()
+        sender == closureButton ? buttonAction?() : delegate?.changeColor(.orange)
     }
     
     // MARK: - Private Methods

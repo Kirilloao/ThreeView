@@ -59,7 +59,7 @@ final class ViewController: UIViewController {
 
 // MARK: - GreenViewDelegate
 extension ViewController: GreenViewDelegate {
-    func changeColor() {
-        view.backgroundColor = .orange
+    func changeColor(_ color: UIColor) {
+        view.backgroundColor = color
     }
 }
